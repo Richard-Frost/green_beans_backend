@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_21_200928) do
+ActiveRecord::Schema.define(version: 2021_09_21_204432) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 2021_09_21_200928) do
   create_table "beans", force: :cascade do |t|
     t.string "name"
     t.integer "farmer_id"
-    t.string "region_integer"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "region_id"
   end
 
   create_table "farmers", force: :cascade do |t|
