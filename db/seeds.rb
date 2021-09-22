@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+farmer1 = Farmer.create(name: "Hacienda Rio Negro", region: "Coasta Rica")
+Bean.create(name: "Costa Rica Rio Negro RFA", farmer_id: farmer1.id)
